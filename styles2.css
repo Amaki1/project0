@@ -30,6 +30,7 @@ body{
     color: #292C33;
     background-color: #eeeff3;
     overflow-x: hidden;
+    position: relative;
 }
 
 .bg{
@@ -245,6 +246,19 @@ input,button{
     color: #292c33;
     text-transform: capitalize;
     font-weight: 500;
+    position: relative;
+}
+
+.second-heading::after{
+    content:'';
+    height: 3px;
+    width: 54px;
+    display: block;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
 }
 
 .steps{
@@ -322,14 +336,15 @@ input,button{
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 0 25px;
+    padding: 0 25px;
     align-items: center;
     color: #A1A4B0;
     padding-bottom: 50px;
 }
 
 .copyright{
-    font-size: 12px;
+    font-size: 14px;
+
 }
 
 .legal-list{
@@ -344,4 +359,92 @@ input,button{
 .legal-link{
     font-size: 14px;
     text-transform: capitalize;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px){
+    .main{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .photo-1{
+        display: none;
+    }
+}
+
+@media (max-width: 965px){
+    .search{
+        padding: 40px 0 50px;
+    }
+
+    .photo-2{
+        display: none;
+    }
+
+    .credentials{
+        justify-content: space-evenly;
+    }
+
+    .credential:nth-last-of-type(1){
+        display: none;
+    }
+
+    .how{
+        padding: 50px 0 65px;
+    }
+
+    .steps{
+        padding: 60px 0;
+        max-width: 500px;
+        flex-wrap: wrap;
+        row-gap: 35px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .main{
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    .credential:nth-last-of-type(2){
+        display: none;
+    }
+
+    .steps{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+    }
+}
+
+@media(max-width:470px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+    }
+
+    .first-heading{
+        max-width: initial;
+        padding: 0 20px;
+        font-size: 34px;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .input, .btn{
+        border-radius: 0;
+    }
 }
