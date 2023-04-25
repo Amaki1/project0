@@ -82,6 +82,10 @@ body{
     font-weight: 700;
 }
 
+.balance-number--special{
+    color: red;
+}
+
 
 /* OVERVIEW */
 .overview{
