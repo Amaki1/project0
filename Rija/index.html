@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     
     <title>Rija No Portfolio</title>
@@ -17,19 +18,112 @@
         </div>
         <nav class="nav">
             <ul class="nav_items">
-                <li class="item">About me</li>
-                <li class="item">Contact me</li>
-                <li class="item">Instagram</li>
-                <li class="item">LinkedIn</li>
+                <li class="item"><a class="item_link" href="">About me</a></li>
+                <li class="item"><a class="item_link" href="">Contact me</a></li>
+                <li class="item"><a class="item_link" href=""><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+                <li class="item"><a class="item_link" href=""><i class="fa-brands fa-linkedin fa-lg"></i></a> </li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
+        <div class="hero">
+            <h2 class="second_heading">Hello I am Rija!</h2>
+            <h1 class="first_heading">Motion Designer & Logo Animator</h1>
+            <p class="para">I make your logos looks artsy and bouncy</p>
+            <p class="para">My favourite color is green and I love plants</p>
+            <a class="first_btn" href="#show_case"><span><i class="fa-sharp fa-solid fa-angles-down fa-bounce"></i></span></a>
+        </div>
 
+        <div class="show_case" id="show_case">
+            <div class="show">
+                <img src="assets/show1.png" alt="" class="show_img">
+            </div>
+            <div class="show">
+                <img src="assets/show2.png" alt="" class="show_img">
+            </div>
+            <div class="show">
+                <img src="assets/show3.png" alt="" class="show_img">
+            </div>
+        </div>
+
+        <div class="tools">
+            <div class="tools_btn">
+                <a class="btn_design active">Tools I use for design</a>
+                <a class="btn_design" >Tools I use for animation</a>
+            </div>
+
+            <div class="tools_display">
+                <div class="display active">
+                    <div class="tool">
+                        <h3 class="third_heading">Illustrator</h3>
+                        <img class="tool_img" src="assets/illustrator.png" alt="">
+                    </div>
+                    <div class="tool">
+                        <h3 class="third_heading">After Effect</h3>
+                        <img class="tool_img" src="assets/afterEffects.png" alt="">
+                    </div>
+                    <div class="tool">
+                        <h3 class="third_heading">Xd</h3>
+                        <img class="tool_img" src="assets/xd.png" alt="">
+                    </div>
+                    <div class="tool">
+                        <h3 class="third_heading">Premier Pro</h3>
+                        <img class="tool_img" src="assets/premierePro.png" alt="">
+                    </div>
+                    <div class="tool">
+                        <h3 class="third_heading">Photoshop</h3>
+                        <img class="tool_img" src="assets/photoshop.png" alt="">
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="tool">
+                        <h3 class="third_heading">Xd</h3>
+                    </div>
+                    <div class="tool">
+                        <h3 class="third_heading">Premier Pro</h3>
+                    </div>
+                    <div class="tool">
+                        <h3 class="third_heading">Photoshop</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="contact">
+            <h3 class="third_heading">Contact me</h3>
+            <form>
+                <div class="col1">
+                    <input type="text" placeholder="Full name">
+                    <input type="email" placeholder="Email">
+                    <button class="submit" type="submit">Send  <i class="fa-regular fa-paper-plane fa-xs"></i></button>
+                </div>
+                <div class="col2">
+                    <textarea placeholder="What do you want to create ?" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="adv" >
+            <h1 class="first_heading">I'm currently available for freelance work</h1>
+            <p class="para">If you are looking for a designer or an animator that likes to get stuff done, let's talk <br> <br><span class="adv_email">official.rija@gmail.com</span></p>
+            <button class="submit">Got a project in mind? Let's talk!</button>
+        </div>
     </main>
 
+
     <footer class="footer">
+        <p class="para">&copy; 2023. All rights reserved</p>
+        <ul class="nav_items">
+            <li class="item"><a class="item_link" href="">Privacy Policy</a></li>
+            <li class="item"><a class="item_link" href="">Terms & conditions</a></li>
+        </ul>
+        <ul class="nav_items">
+            <li class="item"><a class="item_link" href=""><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+            <li class="item"><a class="item_link" href=""><i class="fa-brands fa-linkedin fa-lg"></i></a> </li>
+        </ul>
 
     </footer>
 </body>
