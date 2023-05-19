@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio</title>
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/amakiLogo.png" class="logo" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Assistant Professor</p>
+                <h1>Hi, I'm <span class="name">Amal Ourdou</span>  <br> From Morocco</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/userr.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veniam similique optio, esse modi eveniet nobis praesentium nesciunt illum consectetur, quia culpa quasi quos recusandae ducimus animi nihil rerum dolorem dicta? Voluptatum dolorum ducimus reiciendis quis cumque sapiente, eum, alias ab perspiciatis excepturi consequuntur iste totam laudantium numquam beatae? Adipisci?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" >Eductaion</p>
+                    </div>
+                    <div class="tab-contents active-content" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                            <li><span>Data Science</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                            <li><span> Web Development</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX 2</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                            <li><span>Data Science</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                            <li><span> Web Development</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX 3</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                            <li><span>Data Science</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                            <li><span> Web Development</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function opentab( tabName ){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-content");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-content");
+        }
+    </script>
+
+</body>
+</html>
