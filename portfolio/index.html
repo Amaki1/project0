@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
     <title>Portfolio</title>
 
-
+    <script src="https://kit.fontawsome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="assets/amakiLogo.png" class="logo" alt="">
-                <ul>
+                <img src="assets/Rija1.png" class="logo" alt="">
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About me</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
 
             <div class="header-text">
-                <p>Assistant Professor</p>
-                <h1>Hi, I'm <span class="name">Amal Ourdou</span>  <br> From Morocco</h1>
+                <p>Multimedia Designer</p>
+                <h1>Hi, I'm <span class="name">Rija</span>  <br> From Morocco</h1>
             </div>
         </div>
     </div>
@@ -35,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="assets/userr.jpg" alt="">
+                    <img src="assets/rijaa.png" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
@@ -73,6 +76,102 @@
     </div>
 
 
+    <!-- -----------------------Services----------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus vitae laudantium, laborum quae inventore.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus vitae laudantium, laborum quae inventore.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus vitae laudantium, laborum quae inventore.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------Portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social MediaApp</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi repellat voluptates velit!</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi repellat voluptates velit!</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online shop App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi repellat voluptates velit!</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn"> See more</a>
+        </div>
+    </div>
+
+
+    <!-- ---------------------contact------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>0123456789</p>
+                    <div class="social-icons"> 
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" placeholder="Your Message"  id="" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; Rija. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
     <script>
         var tabLinks = document.getElementsByClassName("tab-links");
         var tabContents = document.getElementsByClassName("tab-contents");
@@ -87,6 +186,18 @@
 
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-content");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sidemenu.style.right = "-200px";
         }
     </script>
 
