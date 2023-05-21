@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 ul {
     list-style: none;
 }
@@ -389,9 +393,15 @@ nav .fa-solid{
     display: none;
 }
 
+#msg{
+    color:rgba(47, 72, 88, 0.75);
+    margin-top: -40px;
+    display: block;
+}
+
 
 /* RESPONSIVE */
-@media only screen and (max-device-width: 600px) {
+@media screen and (max-width: 700px) {
     #header{
         background-image: url(assets/back_phone.png);
         height: -webkit-fill-available;
@@ -422,6 +432,7 @@ nav .fa-solid{
         padding-top: 50px ;
         color: #F7F7F7;
         z-index: 2;
+        transition: right 0.5s;
     }
 
     nav ul li{
@@ -439,4 +450,35 @@ nav .fa-solid{
     nav{
         border-bottom: none;
     }
+
+    /* ABOUT ME */
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
 }
+
